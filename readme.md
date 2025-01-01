@@ -2,8 +2,8 @@
 
 ## Instructions
 
-1. Set up the actions in your Project Settings->Input Map
-You need:  
+1. Set up the actions in your Project Settings->Input Map  
+You need to set up:  
 "up"  
 "down"  
 "left"  
