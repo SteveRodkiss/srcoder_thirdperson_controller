@@ -1,5 +1,6 @@
 extends CharacterBody3D
 
+
 @export_category("Player Movement")
 @export var speed := 5.0
 @export var jump_velocity := 4.5
@@ -11,7 +12,17 @@ const ROTATION_SPEED := 6.0
 
 enum animation_state {IDLE,RUNNING,JUMPING}
 var player_animation_state : animation_state = animation_state.IDLE
-@onready var animation_player : AnimationPlayer = $"playermodel/character-male-e2/AnimationPlayer"
+@export var animation_player : AnimationPlayer
+
+
+func _ready() -> void:
+	#make sure the animation player is set
+	if not animation_player:
+		push_error("AnimationPlayer is not set. Please assign an AnimationPlayer node to the 'animation_player' variable.")
+	# Set the initial animation state to IDLE.
+	player_animation_state = animation_state.IDLE
+	animation_player.play("idle")
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

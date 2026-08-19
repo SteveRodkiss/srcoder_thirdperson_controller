@@ -4,10 +4,10 @@
 
 1. Set up the actions in your Project Settings->Input Map  
 You need to set up:  
-"up"  
-"down"  
-"left"  
-"right" 
+* "up"  
+* "down"  
+* "left"  
+* "right" 
   
 2. The just drag and drop the "player.tscn" onto your scene to have a basic 3d thrid person controller working out of the box.
 
@@ -18,7 +18,5 @@ You need to set up:
 This addon is created from the video tutorial below:
 [![SRCoder Third Person Tutorial](https://img.youtube.com/vi/cAKfruTYQjg/0.jpg)](https://youtu.be/cAKfruTYQjg?si=O-j95XpMySPoNxxq)
   
-It uses the amazing Kenney.nl resources called "Mini Characters 1".
-Get them here: https://www.kenney.nl/assets/mini-characters-1 
-
-
+It uses the amazing Kenney.nl resources called "Mini Characters".
+Get them here: https://kenney.nl/assets/mini-characters
